@@ -1,0 +1,32 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        String s;
+        int a, b;
+        double result;
+        System.out.print("Enter a: ");
+        a = num.nextInt();
+        System.out.print("Enter b: ");
+        b = num.nextInt();
+        System.out.print("Choose the char(+,-,/,*): ");
+        s = num.next();
+        if (s.equals("+")) {
+            result = a + b;
+            System.out.print("Result is :" + result);
+        } else if (s.equals("-")) {
+            result = a - b;
+            System.out.print("Result is :" + result);
+        } else if (s.equals("/")) {
+            result = a / b;
+            System.out.print("Result is :" + result);
+        } else if (s.equals("*")) {
+            result = a * b;
+            System.out.print("Result is :" + result);
+        }
+    }
+}
